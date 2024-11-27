@@ -7,10 +7,10 @@ export default function Nav() {
     
             <ul className="hidden menu sm:menu-horizontal gap-2">
                 <li className="text-white"><a href="/home">Home</a></li>
-                <li className="text-white"><a>Support</a></li>
-                <li className="text-white"><a>Cart</a></li>
-                <Link href="login" className="btn btn-sm btn-primary">Log in</Link>
+                <li className="text-white"><a href="/payment">Payment History</a></li>
+                
             </ul>
         </nav>)
 
 }
+//<Link href="login" className="btn btn-sm btn-primary">Log in</Link>

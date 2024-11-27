@@ -11,7 +11,7 @@ export default function Registration() {
 
     const handleformSubmission = (e: { preventDefault: () => void; }) => {
         e.preventDefault();
-        alert(`Email Sent To :- ${email}`)
+        alert(`Email Sent To :- ${email} password ${password} name ${name}`)
     }
 
     return (
