@@ -39,7 +39,7 @@ export default function Credit() {
   <TextField
     fullWidth
     type="tel"
-    label="Credit card number"
+    label="Credit card Name"
     variant="filled"
     InputProps={{
       endAdornment: (

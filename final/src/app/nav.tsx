@@ -7,7 +7,7 @@ export default function Nav() {
     
             <ul className="hidden menu sm:menu-horizontal gap-2">
                 <li className="text-white"><a href="/home">Home</a></li>
-                <li className="text-white"><a href="/payment">Payment History</a></li>
+                <li className="text-white"><a href="/history">Payment History</a></li>
                 
             </ul>
         </nav>)

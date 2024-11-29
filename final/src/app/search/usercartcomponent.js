@@ -7,7 +7,7 @@ function UserCartComponent({
     deleteCourseFromCartFunction,
     totalAmountCalculationFunction,
     setCartCourses,
-    needbutton
+    needbutton,
 })
 
 
