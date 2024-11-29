@@ -101,8 +101,8 @@ return (
             disabled={cartCourses.length === 0 || 
             totalAmountCalculationFunction() === 0}
             
-        >{localStorage.setItem("cart",JSON.stringify(cartCourses))}
-            <Link href="home"> Submit Payment </Link></button></div>}
+        >{localStorage.setItem("order",JSON.stringify(cartCourses))}
+            <Link href="/home"> Submit Payment </Link></button></div>}
         
         </div>
 </div>
