@@ -82,7 +82,8 @@ export default function Base() {
             <Nav/>
         <SearchComponent searchCourse={searchCourse} 
                         courseSearchUserFunction=
-                            {courseSearchUserFunction} />
+                            {courseSearchUserFunction}
+                            />
         <main className="App-main">
             <ShowCourseComponent
                 courses={courses}
@@ -97,6 +98,7 @@ export default function Base() {
                     totalAmountCalculationFunction
                 }
                 setCartCourses={setCartCourses}
+                needbutton={true}
             />
         </main>
     </div>

@@ -7,6 +7,7 @@ function UserCartComponent({
     deleteCourseFromCartFunction,
     totalAmountCalculationFunction,
     setCartCourses,
+    needbutton
 })
 
 
@@ -14,6 +15,7 @@ function UserCartComponent({
 {
 return (
 <div className={`cart ${cartCourses.length > 0 ? 'active' : ''}`}>
+    {console.log(cartCourses)}
     <h2>My Cart</h2>
     {cartCourses.length === 0 ? (
     <p className="empty-cart">Book Store Catalog</p>
@@ -82,7 +84,7 @@ return (
                 ${totalAmountCalculationFunction()}
             </p>
         </div>
-        <button
+        {needbutton ? (<button
             className="checkout-button"
             disabled={cartCourses.length === 0 || 
             totalAmountCalculationFunction() === 0}
@@ -91,8 +93,18 @@ return (
             {localStorage.setItem("cart",JSON.stringify(cartCourses))}
             <Link href="payment"> Proceed to Payment </Link>
             
-        </button>
-    </div>
+        </button>) :
+        
+        <div>
+            <button
+            className="checkout-button"
+            disabled={cartCourses.length === 0 || 
+            totalAmountCalculationFunction() === 0}
+            
+        >{localStorage.setItem("cart",JSON.stringify(cartCourses))}
+            <Link href="home"> Submit Payment </Link></button></div>}
+        
+        </div>
 </div>
             )}
 </div>

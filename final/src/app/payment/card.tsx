@@ -9,6 +9,51 @@ export default function Credit() {
   <TextField
     fullWidth
     type="tel"
+    label="Delivery Infomation"
+    variant="filled"
+    InputProps={{
+      endAdornment: (
+        <InputAdornment position="end">
+          <svg />
+        </InputAdornment>
+      )
+    }}
+  />
+  <Grid item xs={12}>
+  <TextField
+    fullWidth
+    type="tel"
+    label="Delivery Address"
+    variant="filled"
+    InputProps={{
+      endAdornment: (
+        <InputAdornment position="end">
+          <svg />
+        </InputAdornment>
+      )
+    }}
+  />
+</Grid>
+</Grid>
+<Grid item xs={12}>
+  <TextField
+    fullWidth
+    type="tel"
+    label="Credit card number"
+    variant="filled"
+    InputProps={{
+      endAdornment: (
+        <InputAdornment position="end">
+          <svg />
+        </InputAdornment>
+      )
+    }}
+  />
+</Grid>
+<Grid item xs={12}>
+  <TextField
+    fullWidth
+    type="tel"
     label="Credit card number"
     variant="filled"
     InputProps={{

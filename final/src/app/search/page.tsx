@@ -4,7 +4,7 @@ function SearchComponent({ searchCourse, courseSearchUserFunction }:{searchCours
     return (
         <header className="App-header">
             <h1>Book Store Catalog</h1>
-            <div className="search-bar">
+            <div className="search-bar text-black">
                 <input
                     type="text"
                     placeholder="Search Catalog for books."
